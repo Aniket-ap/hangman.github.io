@@ -8,7 +8,7 @@ const finalMessageRevealWord = document.getElementById('final-message-reveal-wor
 
 const figureParts = document.querySelectorAll('.figure-part');
 
-const words = ['application', 'programming', 'interface', 'wizard', 'javascript'];
+const words = ['gossip', 'hangman', 'awkward', 'jigsaw', 'javascript', 'microwave', 'microwave', 'wristwatch', 'zodiac'];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
@@ -35,7 +35,7 @@ function displayWord() {
 	const innerWord = wordEl.innerText.replace(/[ \n]/g, '');
 
 	if (innerWord === selectedWord) {
-		finalMessage.innerText = 'Congratulations! You won! 😃';
+		finalMessage.innerText = 'Congratulations🎉! You won!';
 		popup.style.display = 'flex';
 
 		playable = false;
